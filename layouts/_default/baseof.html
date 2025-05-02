@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    {{ partialCached "css.html" . }}
+  </head>
+  <body>
+    {{ partial "header.html" . }}
+    {{ partial "banner.html" . }}
+
+    <div class="max-w-5xl mx-auto px-8">
+        {{ block "main" . }}
+        {{ end }}
+    </div>
+
+    {{ block "footer" . }}
+    {{ end }}
+  </body>
+</html>
