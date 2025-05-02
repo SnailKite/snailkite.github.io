@@ -1,5 +1,4 @@
 # Hugo output directories
-/public/
 /resources/_gen/
 
 # Node dependencies
