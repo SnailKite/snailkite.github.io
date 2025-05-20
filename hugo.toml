@@ -62,28 +62,75 @@ title = 'Snail Kites in Florida'
   weight = 3
 
     [[menus.main]]
-    name = "Monitoring"
+    name = "Status and Trends"
     parent = "research"
-    url = "/research/monitoring/"
+    url = "/status/"
+    weight = 1
+
+    [[menus.main]]
+    name = "Nesting and Habitat"
+    parent = "research"
+    url = "/nesting/"
+    weight = 2
+
+    [[menus.main]]
+    name = "Management and Recovery"
+    parent = "research"
+    url = "/management/"
+    weight = 2
+
+  [[menus.main]]
+  name = "Products"
+  identifier = "products"
+  url = "/#/"
+  weight = 4
+
+    [[menus.main]]
+    name = "Reports"
+    parent = "products"
+    url = "/reports/"
     weight = 1
 
     [[menus.main]]
     name = "Publications"
-    parent = "research"
+    parent = "products"
     url = "/publications/"
     weight = 2
 
+    [[menus.main]]
+    name = "Thesis/Dissertations"
+    parent = "products"
+    url = "/dissertations/"
+    weight = 2
+
+  [[menus.main]]
+  name = "Opportunities"
+  identifier = "opportunities"
+  url = "/#/"
+  weight = 5
+
+    [[menus.main]]
+    name = "Technicians"
+    parent = "opportunities"
+    url = "/techs/"
+    weight = 1
+
+    [[menus.main]]
+    name = "Graduate Students"
+    parent = "opportunities"
+    url = "/grads/"
+    weight = 2
 
   [[menus.main]]
   name = "Gallery"
   identifier = "gallery"
   url = "/gallery/"
-  weight = 4
+  weight = 6
 
   [[menus.main]]
   name = "Contact"
   url = "/contact/"
-  weight = 5
+  weight = 7
 
 [build]
   [build.buildStats]
