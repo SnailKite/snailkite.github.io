@@ -1,0 +1,13 @@
++++
+title = "Consistent scaling of population structure across landscapes despite intraspecific variation in movement and connectivity"
+venue = "Journal of Animal Ecology"
+doi = "10.1111/1365-2656.12571"
+author = "Reichert, B. E., R. J. Fletcher, Jr., C. E. Cattau, and W. M. Kitchens"
+date = 2016-07-08
++++
+
+1. Understanding the spatial scale of population structure is fundamental to long-standing tenets of population biology, landscape ecology and conservation. Nonetheless, identifying such scales has been challenging because a key factor that influences scaling – movement among patches or local populations – is a multicausal process with substantial phenotypic and temporal variation.
+2. We resolve this problem via a novel application of network modularity. When applied to movements, modularity provides a formal description of the functional aggregation of populations and identifies potentially critical scales for ecological and evolutionary dynamics. We first test for modularity using several different types of biologically relevant movements across the entire geographic range of an endangered bird, the snail kite (*Rostrhamus sociabilis plumbeus*). We then ask whether variation in movement based on (i) age, (ii) sex and (iii) time (annual, seasonal and within-season movements) influences spatial population structure (i.e. modularity) in snail kites.
+3. We identified significant modularity in annual dispersal of snail kites (all adults, males only, females only, and juveniles only) and in within-breeding season movements of adults, yet no evidence of modularity in seasonal (non-breeding) movements. For those movements with observed modular structure, we found striking similarities in the spatial configuration of population structure, even though movement properties varied considerably among these different types of movements.
+4. Our results suggest that the emergence of modularity in population networks can be robust despite movement heterogeneity and differences in patch-based measures of connectivity. Furthermore, our comparison of the population structure and connectivity across multiple movement phases helps to identify wetland patches most critical to population connectivity at multiple spatiotemporal scales.
+5. We argue that understanding modularity in populations may provide a robust complement to existing measures of population structure and connectivity and will help to clarify the limiting roles of movement for populations. Such information is increasingly needed for interpreting population persistence and guiding effective conservation strategies with ongoing environmental change.

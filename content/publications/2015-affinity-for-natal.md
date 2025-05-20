@@ -1,0 +1,9 @@
++++
+title = "Affinity for natal environments by dispersers impacts reproduction and explains geographical structure of a highly mobile bird"
+venue = "Proceedings of the Royal Society B"
+doi = "10.1098/rspb.2015.1545"
+author = "Fletcher, R. J., Jr., E. P. Robertson, R. C. Wilcox, B. E. Reichert, J. D. Austin, and W. M. Kitchens"
+date = 2015-09-07
++++
+
+Understanding dispersal and habitat selection behaviours is central to many problems in ecology, evolution and conservation. One factor often hypothesized to influence habitat selection by dispersers is the natal environment experienced by juveniles. Nonetheless, evidence for the effect of natal environment on dispersing, wild vertebrates remains limited. Using 18 years of nesting and mark–resight data across an entire North American geographical range of an endangered bird, the snail kite (Rostrhamus sociabilis), we tested for natal effects on breeding-site selection by dispersers and its consequences for reproductive success and population structure. Dispersing snail kites were more likely to nest in wetlands of the same habitat type (lacustrine or palustrine) as their natal wetland, independent of dispersal distance, but this preference declined with age and if individuals were born during droughts. Importantly, dispersing kites that bred in natal-like habitats had lower nest success and productivity than kites that did not. These behaviours help explain recently described population connectivity and spatial structure across their geographical range and reveal that assortative breeding is occurring, where birds are more likely to breed with individuals born in the same wetland type as their natal habitat. Natal environments can thus have long-term and large-scale effects on populations in nature, even in highly mobile animals.
