@@ -1,0 +1,59 @@
+{{ define "main" }}
+<div class="container mx-auto px-4 py-8">
+  <h1 class="text-3xl font-bold mb-8">{{ .Title }}</h1>
+
+  <!-- Get all image resources in the gallery directory and subdirectories -->
+  {{ with .Resources.Match "**/*.{jpg,jpeg,png,gif,webp}" }}
+    <!-- Group resources by directory path -->
+    {{ $grouped := dict }}
+    {{ range . }}
+      {{ $path := path.Dir .Name }}
+      {{ $grouped = merge $grouped (dict $path (slice . | append (index $grouped $path | default slice))) }}
+    {{ end }}
+
+    <!-- Loop through each directory group -->
+    {{ range $folder, $images := $grouped }}
+      <!-- Don't create a section for root level images -->
+      {{ if ne $folder "." }}
+        <div class="mb-12">
+          <h2 class="text-2xl font-semibold mb-4 capitalize">{{ $folder }}</h2>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <!-- Loop through all images in the current directory -->
+            {{ range $images }}
+              {{ $image := . }}
+              <div class="overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                <!-- Convert full-size image to WebP -->
+                {{ $fullSizeWebp := $image.Resize "1200x webp" }}
+                {{ $originalImage := $image }}
+
+                <a href="{{ $fullSizeWebp.RelPermalink }}" class="block">
+                  <!-- Process image for optimization -->
+                  {{ $thumbnail := $image.Fill "400x300 smart" }}
+                  {{ $webpThumbnail := $thumbnail.Resize "400x webp" }}
+                  <picture>
+                    <source srcset="{{ $webpThumbnail.RelPermalink }}" type="image/webp">
+                    <img
+                      src="{{ $thumbnail.RelPermalink }}"
+                      alt="{{ path.Base $image.Name | replaceRE "\\.[^.]+$" "" }}"
+                      class="w-full h-48 object-cover hover:opacity-90 transition-opacity duration-300"
+                      loading="lazy"
+                      width="{{ $thumbnail.Width }}"
+                      height="{{ $thumbnail.Height }}"
+                    >
+                  </picture>
+                </a>
+                <div class="p-3 bg-white">
+                  <p class="text-sm text-gray-700 truncate">{{ path.Base $image.Name | replaceRE "\\.[^.]+$" "" }}</p>
+                </div>
+              </div>
+            {{ end }}
+          </div>
+        </div>
+      {{ end }}
+    {{ end }}
+  {{ else }}
+    <p class="text-lg text-gray-600">No images found in the gallery.</p>
+  {{ end }}
+</div>
+{{ end }}

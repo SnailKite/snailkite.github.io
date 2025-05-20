@@ -1,0 +1,26 @@
+{{ define "main" }}
+<div class="max-w-4xl mx-auto px-4 py-12">
+  <h1 class="text-4xl font-bold mb-10">Publications</h1>
+
+  {{ range sort .Pages "Date" "desc" }}
+    <div class="mb-8">
+      <!-- Title (linked) -->
+      <h2 class="text-xl font-semibold">
+        <a href="{{ .RelPermalink }}" class="text-blue-800 hover:underline">
+          {{ .Title }}
+        </a>
+      </h2>
+
+      <!-- Meta info line -->
+      <p class="text-sm text-gray-600 mt-1">
+        {{ .Params.author }}
+        ({{ .Date.Format "2006" }})
+        <span class="italic">{{ .Params.venue }}</span>
+        {{ with .Params.doi }}
+          — <a href="https://doi.org/{{ . }}" class="text-blue-600 hover:underline" target="_blank">doi:{{ . }}</a>
+        {{ end }}
+      </p>
+    </div>
+  {{ end }}
+</div>
+{{ end }}

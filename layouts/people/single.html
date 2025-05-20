@@ -1,0 +1,37 @@
+{{ define "main" }}
+<div class="max-w-3xl mx-auto px-4 py-12">
+  <div class="flex flex-col sm:flex-row gap-6">
+    {{ $image := .Resources.GetMatch "photo.{jpg,jpeg,png}" }}
+    {{ if $image }}
+        <img src="{{ $image.RelPermalink }}" alt="{{ .Title }}" class="w-48 h-48 object-cover rounded shadow">
+    {{ else }}
+        <img src="{{ "images/avatar.png" | relURL }}" alt="{{ .Title }}" class="w-48 h-48 object-cover rounded shadow">
+    {{ end }}
+    <div>
+      <h1 class="text-3xl font-bold">{{ .Title }}</h1>
+      <div class="text-gray-600 text-lg">{{ .Params.job_title }}</div>
+      {{ if eq .Params.status "past" }}
+        <div class="text-sm text-red-500 mt-1">Former member</div>
+      {{ end }}
+
+      <!-- Links -->
+      <div class="mt-4 space-y-1">
+        {{ with .Params.website }}
+          <div><a href="{{ . }}" class="text-blue-600 hover:underline" target="_blank">🌐 Personal Website</a></div>
+        {{ end }}
+        {{ with .Params.socials }}
+          <div class="flex flex-wrap gap-3 items-center">
+            {{ range $name, $url := . }}
+              <a href="{{ $url }}" class="text-blue-600 hover:underline capitalize" target="_blank">🔗 {{ $name }}</a>
+            {{ end }}
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-8 prose max-w-none">
+    {{ .Content }}
+  </div>
+</div>
+{{ end }}

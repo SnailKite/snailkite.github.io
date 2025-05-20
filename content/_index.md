@@ -1,15 +1,3 @@
 +++
-date = '2025-01-30T03:36:57-08:00'
-draft = false
-title = 'Snail Kites in Florida'
+title = "Home"
 +++
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In volutpat urna tincidunt, pulvinar erat vel, rhoncus ligula. Nulla nunc mauris, ornare vel nunc vitae, suscipit pulvinar elit. Fusce aliquet lectus et posuere lacinia. Curabitur ullamcorper vel metus sed pretium. Donec eleifend accumsan diam. Sed convallis congue orci consequat iaculis. Suspendisse tristique vitae mi a venenatis. Proin pharetra tortor vel lectus tincidunt, et dapibus augue volutpat. Maecenas feugiat, lectus non consequat pulvinar, risus felis ornare nisi, ut viverra velit magna quis nulla.
-
-Nam suscipit pharetra augue, et finibus nunc rutrum vel. Donec eget lorem eu tortor feugiat venenatis. Cras nec lectus iaculis, finibus lacus quis, dapibus massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec a mi dignissim, euismod dolor at, elementum sapien. Duis ultrices at orci id congue. Sed feugiat arcu ut leo viverra vestibulum. Nulla quis ornare nisl. Proin condimentum, ante id dapibus pellentesque, mi neque molestie odio, eget fringilla nulla dolor nec ligula. Vivamus aliquet nisi vel orci gravida, nec cursus purus maximus. Aenean ut ultricies lacus, nec ultricies turpis. Nunc pulvinar, nisl et lobortis laoreet, leo est consectetur magna, non gravida nibh libero aliquet erat.
-
-Quisque volutpat tincidunt nisl, id finibus urna. Duis sit amet molestie arcu. Pellentesque ac dui pellentesque libero placerat venenatis in ut risus. Curabitur sed porttitor augue. Nam accumsan aliquet fermentum. Vivamus quam ipsum, porta id varius non, finibus id sem. Cras eget lacinia enim. Cras eros ligula, porttitor eu velit vitae, consequat tempus urna. Etiam placerat tellus id felis auctor lobortis. Integer tempus libero et ipsum placerat tristique. Mauris sit amet lacinia lectus. Aliquam vehicula pharetra viverra. Integer congue quam et dolor congue, nec luctus leo mollis. Nunc ornare nisl quis bibendum finibus. Cras feugiat porttitor purus. Maecenas libero erat, lacinia nec porttitor quis, suscipit at enim.
-
-Vestibulum ante leo, fermentum nec augue in, porta accumsan nisl. Phasellus ultrices tristique luctus. Morbi semper commodo nibh, sed tempor nulla. Aliquam vel sagittis quam, et cursus lacus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse placerat maximus purus, non elementum libero vehicula dictum. Sed a tellus ut urna pellentesque auctor. Duis purus arcu, egestas auctor felis ut, hendrerit hendrerit nisi. Nulla et faucibus turpis, et mollis ipsum. Nullam vel porta lorem. Nullam imperdiet ligula at ullamcorper tristique. Aenean facilisis leo dui, ut lacinia nibh placerat nec. Fusce dapibus augue ante, id posuere velit malesuada eu.
-
-Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus et arcu ac felis aliquet sollicitudin. Sed sit amet vehicula justo. Donec efficitur vel neque consectetur convallis. Aliquam nec sodales felis. Integer eget metus id ligula sollicitudin posuere eget id lectus. Integer nec arcu vestibulum lorem euismod eleifend.

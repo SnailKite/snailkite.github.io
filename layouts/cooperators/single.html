@@ -1,0 +1,23 @@
+{{ define "main" }}
+<div class="max-w-5xl mx-auto px-4 py-12">
+  <h1 class="text-4xl font-bold mb-4">{{ .Title }}</h1>
+
+  {{ .Content }}
+
+  <!-- Collaborators -->
+  <h2 class="text-2xl font-semibold mt-6 mb-4">Collaborators</h2>
+  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 items-center">
+    {{ range .Resources.Match "collaborators/*" }}
+      <img src="{{ .RelPermalink }}" alt="{{ .Name }}" class="max-h-24 object-contain mx-auto" loading="lazy">
+    {{ end }}
+  </div>
+
+  <!-- Supporters -->
+  <h2 class="text-2xl font-semibold mt-12 mb-4">Supporters</h2>
+  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 items-center">
+    {{ range .Resources.Match "supporters/*" }}
+      <img src="{{ .RelPermalink }}" alt="{{ .Name }}" class="max-h-24 object-contain mx-auto" loading="lazy">
+    {{ end }}
+  </div>
+</div>
+{{ end }}
