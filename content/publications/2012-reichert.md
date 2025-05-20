@@ -1,0 +1,11 @@
++++
+title = "Extreme weather and experience influence reproduction in an endangered bird"
+author = "Reichert, B. E., C. E. Cattau, R. J. Fletcher, Jr., W. L. Kendall, and W. M. Kitchens"
+venue = "Ecology"
+doi = "10.1890/12-0233.1"
+date = "2012-12-01"
++++
+
+Extreme weather events, such as droughts and heat waves, are expected to become more severe and more frequent in the coming years, and understanding their impacts on demographic rates is of increasing interest to both evolutionary ecologists and conservation practitioners. An individual's breeding probability can be a sensitive indicator of the decision to initiate reproductive behavior under varying environmental conditions, has strong fitness consequences, and can be considered the first step in a life history trade-off between allocating resources for breeding activities or self-survival.
+
+Using a 14-year time series spanning large variation in climatic conditions and the entirety of a population's breeding range, we estimated the effects of extreme weather conditions (drought) on the state-specific probabilities of breeding and survival of an endangered bird, the Florida Snail Kite (*Rostrhamus sociabilis plumbeus*). Our analysis accounted for uncertainty in breeding status assignment, a common source of uncertainty that is often ignored when states are based on field observations. Breeding probabilities in adult kites (>1 year of age) decreased during droughts, whereas the probability of breeding in young kites (1 year of age) tended to increase. Individuals attempting to breed showed no evidence of reduced future survival. Although population viability analyses of this species and other species often implicitly assume that all adults will attempt to breed, we find that breeding probabilities were significantly <1 for all 13 estimable years considered. Our results suggest that experience is an important factor determining whether or not individuals attempt to breed during harsh environmental conditions and that reproductive effort may be constrained by an individual's quality and/or despotic behavior among individuals attempting to breed.

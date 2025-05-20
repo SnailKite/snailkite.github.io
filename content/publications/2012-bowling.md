@@ -1,0 +1,9 @@
++++
+title = "The effect of changes in habitat conditions on the movement of juvenile Snail Kites (Rostrhamus sociabilis plumbeus)"
+author = "Bowling, A. C., J. Martin, and W. M. Kitchens"
+venue = "Ibis"
+doi = "10.1111/j.1474-919X.2012.01231.x"
+date = "2012-04-26"
++++
+
+The degradation of habitats due to human activities is a major topic of interest for the conservation and management of wild populations. There is growing evidence that the Florida Everglades ecosystem continues to suffer from habitat degradation. After a period of recovery in the 1990s, the Snail Kite *Rostrhamus sociabilis* population suffered a substantial decline in 2001 and has not recovered since. Habitat degradation has been suggested as one of the primary reasons for this lack of recovery. As a consequence of the continued degradation of the Everglades, we hypothesized that this would have led to increased movement of juvenile Kites over time, as a consequence of the need to find more favourable habitat. We used multistate mark-recapture models to compare between-site movement probabilities of juvenile Snail Kites in the 1990s (1992–95; which corresponds to the period before the decline) and 2000s (2003–06; after the decline). Our analyses were based on an extensive radiotelemetry study (266 birds tracked monthly over the entire state of Florida for a total period of 6 years) and considered factors such as sex and age of marked individuals. There was evidence of increased movement of juvenile Snail Kites during the post-decline period from most of the wetland regions used historically by Kites. Higher movement rates may contribute to an increase in the probability of mortality of young individuals and could contribute to the observed declines.

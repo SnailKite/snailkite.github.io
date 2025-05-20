@@ -1,0 +1,21 @@
+{{ define "main" }}
+<div class="max-w-4xl mx-auto px-4 py-12">
+  <h1 class="text-4xl font-bold mb-10">Publications</h1>
+
+  {{ range sort .Pages "Date" "desc" }}
+    <div class="mb-8">
+      <!-- Title (linked) -->
+      <h2 class="text-xl font-semibold">
+        {{ .Params.thesisTitle | markdownify }}
+      </h2>
+
+      <!-- Meta info line -->
+      <p class="text-sm text-gray-600 mt-1">
+        {{ .Params.name }}.
+        {{ .Params.type }}
+        ({{ .Date.Format "2006" }})
+      </p>
+    </div>
+  {{ end }}
+</div>
+{{ end }}
