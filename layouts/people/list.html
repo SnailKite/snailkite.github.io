@@ -8,36 +8,44 @@
 
   <!-- Current people -->
   <h2 class="text-2xl font-semibold mt-10 mb-4">Current</h2>
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-    {{ range $current }}
-      <a href="{{ .RelPermalink }}" class="group block bg-white shadow p-4 rounded hover:shadow-lg transition">
-        {{ $image := .Resources.GetMatch "photo.{jpg,jpeg,png}" }}
-        {{ if $image }}
-            <img src="{{ $image.RelPermalink }}" alt="{{ .Title }}" class="w-48 h-48 object-cover rounded shadow">
-        {{ else }}
-            <img src="{{ "images/avatar.png" | relURL }}" alt="{{ .Title }}" class="w-48 h-48 object-cover rounded shadow">
-        {{ end }}
-        <div class="text-lg font-medium group-hover:underline">{{ .Title }}</div>
-        <div class="text-gray-500">{{ .Params.job_title }}</div>
-      </a>
-    {{ end }}
+  <div class="flex justify-center">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      {{ range $current }}
+        <a href="{{ .RelPermalink }}" class="group flex flex-col items-center bg-white shadow p-4 rounded hover:shadow-lg transition w-48">
+          <div class="w-36 h-36">
+            {{ $image := .Resources.GetMatch "photo.{jpg,jpeg,png}" }}
+            {{ if $image }}
+              <img src="{{ $image.RelPermalink }}" alt="{{ .Title }}" class="w-full h-full object-cover rounded shadow">
+            {{ else }}
+              <img src="{{ "images/avatar.png" | relURL }}" alt="{{ .Title }}" class="w-full h-full object-cover rounded shadow">
+            {{ end }}
+          </div>
+          <div class="mt-3 text-lg font-medium text-center group-hover:underline">{{ .Title }}</div>
+          <div class="text-gray-500 text-center">{{ .Params.job_title }}</div>
+        </a>
+      {{ end }}
+    </div>
   </div>
 
   <!-- Past people -->
   <h2 class="text-2xl font-semibold mt-16 mb-4">Past</h2>
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-    {{ range $past }}
-      <a href="{{ .RelPermalink }}" class="group block bg-white shadow p-4 rounded hover:shadow-lg transition">
-        {{ $image := .Resources.GetMatch "photo.{jpg,jpeg,png}" }}
-        {{ if $image }}
-            <img src="{{ $image.RelPermalink }}" alt="{{ .Title }}" class="w-48 h-48 object-cover rounded shadow">
-        {{ else }}
-            <img src="{{ "images/avatar.png" | relURL }}" alt="{{ .Title }}" class="w-48 h-48 object-cover rounded shadow">
-        {{ end }}
-        <div class="text-lg font-medium group-hover:underline">{{ .Title }}</div>
-        <div class="text-gray-500">{{ .Params.job_title }}</div>
-      </a>
-    {{ end }}
+  <div class="flex justify-center">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      {{ range $past }}
+        <a href="{{ .RelPermalink }}" class="group flex flex-col items-center bg-white shadow p-4 rounded hover:shadow-lg transition w-48">
+          <div class="w-36 h-36">
+            {{ $image := .Resources.GetMatch "photo.{jpg,jpeg,png}" }}
+            {{ if $image }}
+              <img src="{{ $image.RelPermalink }}" alt="{{ .Title }}" class="w-full h-full object-cover rounded shadow">
+            {{ else }}
+              <img src="{{ "images/avatar.png" | relURL }}" alt="{{ .Title }}" class="w-full h-full object-cover rounded shadow">
+            {{ end }}
+          </div>
+          <div class="mt-3 text-lg font-medium text-center group-hover:underline">{{ .Title }}</div>
+          <div class="text-gray-500 text-center">{{ .Params.job_title }}</div>
+        </a>
+      {{ end }}
+    </div>
   </div>
 </div>
 {{ end }}

@@ -17,37 +17,40 @@
       {{ if ne $folder "." }}
         <div class="mb-12">
           <h2 class="text-2xl font-semibold mb-4 capitalize">{{ $folder }}</h2>
+          <div class="flex justify-center">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+              <!-- Loop through all images in the current directory -->
+              {{ range $images }}
+                {{ $image := . }}
+                <div class="flex flex-col items-center bg-white shadow p-4 rounded hover:shadow-lg transition w-48">
+                  <div class="w-48 h-48">
+                    <!-- Convert full-size image to WebP -->
+                    {{ $fullSizeWebp := $image.Resize "1200x webp" }}
+                    {{ $originalImage := $image }}
 
-          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            <!-- Loop through all images in the current directory -->
-            {{ range $images }}
-              {{ $image := . }}
-              <div class="overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-                <!-- Convert full-size image to WebP -->
-                {{ $fullSizeWebp := $image.Resize "1200x webp" }}
-                {{ $originalImage := $image }}
-
-                <a href="{{ $fullSizeWebp.RelPermalink }}" class="block">
-                  <!-- Process image for optimization -->
-                  {{ $thumbnail := $image.Fill "400x300 smart" }}
-                  {{ $webpThumbnail := $thumbnail.Resize "400x webp" }}
-                  <picture>
-                    <source srcset="{{ $webpThumbnail.RelPermalink }}" type="image/webp">
-                    <img
-                      src="{{ $thumbnail.RelPermalink }}"
-                      alt="{{ path.Base $image.Name | replaceRE "\\.[^.]+$" "" }}"
-                      class="w-full h-48 object-cover hover:opacity-90 transition-opacity duration-300"
-                      loading="lazy"
-                      width="{{ $thumbnail.Width }}"
-                      height="{{ $thumbnail.Height }}"
-                    >
-                  </picture>
-                </a>
-                <div class="p-3 bg-white">
-                  <p class="text-sm text-gray-700 truncate">{{ path.Base $image.Name | replaceRE "\\.[^.]+$" "" }}</p>
+                    <a href="{{ $fullSizeWebp.RelPermalink }}" class="block h-full">
+                      <!-- Process image for optimization -->
+                      {{ $thumbnail := $image.Fill "400x400 smart" }}
+                      {{ $webpThumbnail := $thumbnail.Resize "400x webp" }}
+                      <picture>
+                        <source srcset="{{ $webpThumbnail.RelPermalink }}" type="image/webp">
+                        <img
+                          src="{{ $thumbnail.RelPermalink }}"
+                          alt="{{ path.Base $image.Name | replaceRE "\\.[^.]+$" "" }}"
+                          class="w-full h-full object-cover rounded shadow"
+                          loading="lazy"
+                          width="{{ $thumbnail.Width }}"
+                          height="{{ $thumbnail.Height }}"
+                        >
+                      </picture>
+                    </a>
+                  </div>
+                  <div class="mt-3 text-lg font-medium text-center">
+                    <p class="text-gray-700 truncate">{{ path.Base $image.Name | replaceRE "\\.[^.]+$" "" }}</p>
+                  </div>
                 </div>
-              </div>
-            {{ end }}
+              {{ end }}
+            </div>
           </div>
         </div>
       {{ end }}
