@@ -53,11 +53,45 @@
                                 class="absolute left-0 top-full mt-2 w-48 bg-white shadow-md rounded-md py-2 z-50"
                             >
                                 
-                                    <li><a href="/about/mission/" class="block px-4 py-2 hover:bg-gray-100">Mission</a></li>
+                                    <li><a href="/mission/" class="block px-4 py-2 hover:bg-gray-100">Mission</a></li>
                                 
                                     <li><a href="/people/" class="block px-4 py-2 hover:bg-gray-100">People</a></li>
                                 
-                                    <li><a href="/about/cooperators/" class="block px-4 py-2 hover:bg-gray-100">Cooperators</a></li>
+                                    <li><a href="/cooperators/" class="block px-4 py-2 hover:bg-gray-100">Cooperators</a></li>
+                                
+                            </ul>
+                        </li>
+                    
+                
+                    
+                        <li
+                            class="relative"
+                            x-data="{ dropdownOpen: false }"
+                            @mouseover="dropdownOpen = true"
+                            @mouseleave="dropdownOpen = false"
+                        >
+                            <button
+                                @click="dropdownOpen = !dropdownOpen"
+                                class="hover:underline flex items-center gap-1"
+                                :aria-expanded="dropdownOpen"
+                            >
+                                Learn
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 011.08 1.04l-4.25 4.25a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                            <ul
+                                x-show="dropdownOpen"
+                                x-transition
+                                @click.away="dropdownOpen = false"
+                                class="absolute left-0 top-full mt-2 w-48 bg-white shadow-md rounded-md py-2 z-50"
+                            >
+                                
+                                    <li><a href="/facts/" class="block px-4 py-2 hover:bg-gray-100">Facts</a></li>
+                                
+                                    <li><a href="/history/" class="block px-4 py-2 hover:bg-gray-100">History</a></li>
+                                
+                                    <li><a href="/identification/" class="block px-4 py-2 hover:bg-gray-100">Identification</a></li>
                                 
                             </ul>
                         </li>
@@ -87,9 +121,11 @@
                                 class="absolute left-0 top-full mt-2 w-48 bg-white shadow-md rounded-md py-2 z-50"
                             >
                                 
-                                    <li><a href="/research/monitoring/" class="block px-4 py-2 hover:bg-gray-100">Monitoring</a></li>
+                                    <li><a href="/status/" class="block px-4 py-2 hover:bg-gray-100">Status and Trends</a></li>
                                 
-                                    <li><a href="/publications/" class="block px-4 py-2 hover:bg-gray-100">Publications</a></li>
+                                    <li><a href="/management/" class="block px-4 py-2 hover:bg-gray-100">Management and Recovery</a></li>
+                                
+                                    <li><a href="/nesting/" class="block px-4 py-2 hover:bg-gray-100">Nesting and Habitat</a></li>
                                 
                             </ul>
                         </li>
@@ -107,7 +143,7 @@
                                 class="hover:underline flex items-center gap-1"
                                 :aria-expanded="dropdownOpen"
                             >
-                                Gallery
+                                Products
                                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 011.08 1.04l-4.25 4.25a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
                                 </svg>
@@ -119,14 +155,50 @@
                                 class="absolute left-0 top-full mt-2 w-48 bg-white shadow-md rounded-md py-2 z-50"
                             >
                                 
-                                    <li><a href="/gallery/snailkites/" class="block px-4 py-2 hover:bg-gray-100">Snail Kites</a></li>
+                                    <li><a href="/reports/" class="block px-4 py-2 hover:bg-gray-100">Reports</a></li>
                                 
-                                    <li><a href="/gallery/fieldwork/" class="block px-4 py-2 hover:bg-gray-100">Field Work</a></li>
+                                    <li><a href="/publications/" class="block px-4 py-2 hover:bg-gray-100">Publications</a></li>
                                 
-                                    <li><a href="/gallery/nests/" class="block px-4 py-2 hover:bg-gray-100">Nests</a></li>
+                                    <li><a href="/dissertations/" class="block px-4 py-2 hover:bg-gray-100">Thesis/Dissertations</a></li>
                                 
                             </ul>
                         </li>
+                    
+                
+                    
+                        <li
+                            class="relative"
+                            x-data="{ dropdownOpen: false }"
+                            @mouseover="dropdownOpen = true"
+                            @mouseleave="dropdownOpen = false"
+                        >
+                            <button
+                                @click="dropdownOpen = !dropdownOpen"
+                                class="hover:underline flex items-center gap-1"
+                                :aria-expanded="dropdownOpen"
+                            >
+                                Opportunities
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 011.08 1.04l-4.25 4.25a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                            <ul
+                                x-show="dropdownOpen"
+                                x-transition
+                                @click.away="dropdownOpen = false"
+                                class="absolute left-0 top-full mt-2 w-48 bg-white shadow-md rounded-md py-2 z-50"
+                            >
+                                
+                                    <li><a href="/techs/" class="block px-4 py-2 hover:bg-gray-100">Technicians</a></li>
+                                
+                                    <li><a href="/grads/" class="block px-4 py-2 hover:bg-gray-100">Graduate Students</a></li>
+                                
+                            </ul>
+                        </li>
+                    
+                
+                    
+                        <li><a href="/gallery/" class="hover:underline">Gallery</a></li>
                     
                 
                     
@@ -171,11 +243,38 @@
                             class="flex flex-col text-right mt-2 pr-6"
                         >
                             
-                                <li><a href="/about/mission/" class="block py-1 hover:underline">Mission</a></li>
+                                <li><a href="/mission/" class="block py-1 hover:underline">Mission</a></li>
                             
                                 <li><a href="/people/" class="block py-1 hover:underline">People</a></li>
                             
-                                <li><a href="/about/cooperators/" class="block py-1 hover:underline">Cooperators</a></li>
+                                <li><a href="/cooperators/" class="block py-1 hover:underline">Cooperators</a></li>
+                            
+                        </ul>
+                    </li>
+                
+            
+                
+                    <li x-data="{ dropdownOpen: false }" class="relative">
+                        <button
+                            @click="dropdownOpen = !dropdownOpen"
+                            class="block w-full text-right pr-4 hover:underline flex justify-end items-center"
+                        >
+                            Learn
+                            <svg class="w-4 h-4 ml-2 transform transition-transform" :class="{ 'rotate-180': dropdownOpen }" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 011.08 1.04l-4.25 4.25a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <ul
+                            x-show="dropdownOpen"
+                            x-transition
+                            class="flex flex-col text-right mt-2 pr-6"
+                        >
+                            
+                                <li><a href="/facts/" class="block py-1 hover:underline">Facts</a></li>
+                            
+                                <li><a href="/history/" class="block py-1 hover:underline">History</a></li>
+                            
+                                <li><a href="/identification/" class="block py-1 hover:underline">Identification</a></li>
                             
                         </ul>
                     </li>
@@ -198,9 +297,11 @@
                             class="flex flex-col text-right mt-2 pr-6"
                         >
                             
-                                <li><a href="/research/monitoring/" class="block py-1 hover:underline">Monitoring</a></li>
+                                <li><a href="/status/" class="block py-1 hover:underline">Status and Trends</a></li>
                             
-                                <li><a href="/publications/" class="block py-1 hover:underline">Publications</a></li>
+                                <li><a href="/management/" class="block py-1 hover:underline">Management and Recovery</a></li>
+                            
+                                <li><a href="/nesting/" class="block py-1 hover:underline">Nesting and Habitat</a></li>
                             
                         </ul>
                     </li>
@@ -212,7 +313,7 @@
                             @click="dropdownOpen = !dropdownOpen"
                             class="block w-full text-right pr-4 hover:underline flex justify-end items-center"
                         >
-                            Gallery
+                            Products
                             <svg class="w-4 h-4 ml-2 transform transition-transform" :class="{ 'rotate-180': dropdownOpen }" fill="currentColor" viewBox="0 0 20 20">
                             <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 011.08 1.04l-4.25 4.25a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
                             </svg>
@@ -223,14 +324,43 @@
                             class="flex flex-col text-right mt-2 pr-6"
                         >
                             
-                                <li><a href="/gallery/snailkites/" class="block py-1 hover:underline">Snail Kites</a></li>
+                                <li><a href="/reports/" class="block py-1 hover:underline">Reports</a></li>
                             
-                                <li><a href="/gallery/fieldwork/" class="block py-1 hover:underline">Field Work</a></li>
+                                <li><a href="/publications/" class="block py-1 hover:underline">Publications</a></li>
                             
-                                <li><a href="/gallery/nests/" class="block py-1 hover:underline">Nests</a></li>
+                                <li><a href="/dissertations/" class="block py-1 hover:underline">Thesis/Dissertations</a></li>
                             
                         </ul>
                     </li>
+                
+            
+                
+                    <li x-data="{ dropdownOpen: false }" class="relative">
+                        <button
+                            @click="dropdownOpen = !dropdownOpen"
+                            class="block w-full text-right pr-4 hover:underline flex justify-end items-center"
+                        >
+                            Opportunities
+                            <svg class="w-4 h-4 ml-2 transform transition-transform" :class="{ 'rotate-180': dropdownOpen }" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 011.08 1.04l-4.25 4.25a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <ul
+                            x-show="dropdownOpen"
+                            x-transition
+                            class="flex flex-col text-right mt-2 pr-6"
+                        >
+                            
+                                <li><a href="/techs/" class="block py-1 hover:underline">Technicians</a></li>
+                            
+                                <li><a href="/grads/" class="block py-1 hover:underline">Graduate Students</a></li>
+                            
+                        </ul>
+                    </li>
+                
+            
+                
+                    <li><a href="/gallery/" class="block w-full text-right pr-4 hover:underline">Gallery</a></li>
                 
             
                 
@@ -249,7 +379,7 @@
         
 <div class="max-w-3xl mx-auto px-4 py-12">
   <h1 class="text-3xl font-bold mb-2">Experimental Test of Preferences for an Invasive Prey by an Endangered Predator: Implications for Conservation</h1>
-  <p class="text-gray-600">PLoS One, November 12, 2016</p>
+  <p class="text-gray-600">PLoS One, November 9, 2016</p>
 
   
     <p class="mt-2">
