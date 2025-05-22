@@ -80,28 +80,28 @@ title = 'Snail Kites in Florida'
     weight = 2
 
   [[menus.main]]
-  name = "Products"
-  identifier = "products"
+  name = "Findings"
+  identifier = "findings"
   url = "/#/"
   weight = 4
 
     [[menus.main]]
     name = "Reports"
-    parent = "products"
+    parent = "findings"
     url = "/reports/"
     weight = 1
 
     [[menus.main]]
     name = "Publications"
-    parent = "products"
+    parent = "findings"
     url = "/publications/"
     weight = 2
 
     [[menus.main]]
     name = "Thesis/Dissertations"
-    parent = "products"
+    parent = "findings"
     url = "/dissertations/"
-    weight = 2
+    weight = 3
 
   [[menus.main]]
   name = "Opportunities"
